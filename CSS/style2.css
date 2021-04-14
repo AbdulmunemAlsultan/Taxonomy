@@ -1,0 +1,228 @@
+.mian{
+
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    /* background-color: lightgrey; */
+}
+  .header{
+    width: auto;
+    height: 60px;
+    /* border: 2px solid black; */
+    background-color: #D7DBDD;
+     padding:8px;
+}
+h2{
+    margin: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
+  
+  /**
+   * Framework starts from here ...
+   * ------------------------------
+   */
+  
+  .tree,
+  .tree ul {
+    margin:0 0 0 1em; /* indentation */
+    padding:0;
+    list-style:none;
+    color:#369;
+    position:relative;
+  }
+  
+  .tree ul {margin-left:.5em} /* (indentation/2) */
+  
+  .tree:before,
+  .tree ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    border-left:1px solid;
+  }
+  
+  .tree li {
+    margin:0;
+    padding:0 1.5em; /* indentation + .5em */
+    line-height:2em; /* default list item's `line-height` */
+    font-weight:bold;
+    position:relative;
+  }
+  
+  .tree li:before {
+    content:"";
+    display:block;
+    width:10px; /* same with indentation */
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px; /* border top width */
+    position:absolute;
+    top:1em; /* (line-height/2) */
+    left:0;
+  }
+  .tree .reall li:before{
+    content:"";
+    display:block;
+    width:70%; /* same with indentation */
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px; /* border top width */
+    position:absolute;
+    top:1em; /* (line-height/2) */
+    left:0; 
+  }
+  .fin {
+    width: 30%; text-align: end;
+  }
+  
+  .tree li:last-child:before {
+    /* background:white; same with body background */
+    height:auto;
+    top:1em; /* (line-height/2) */
+    bottom:0;
+  }
+  .tree{
+    margin: 2%;
+    width: 90%;
+    height: auto;
+    background: #F4F6F7;
+    /* border: 2px solid gray; */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+
+}
+.tree-li-ul {
+  display: none;
+  /* background-color: yellow; */
+}
+
+.tree-li-ul.tree-open {
+  display: block;
+  
+}
+
+ul, #myUL {
+    list-style-type: none;
+    transition: 1s;
+  }
+  
+  #myUL {
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+  }
+  
+  .caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+    font-size: 16px;
+    transition: 1s;
+  }
+  
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+    transition: 1s;
+  }
+  
+  .caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
+    transition: 1s;
+ 
+  }
+  
+  .nested {
+    display: none;
+    /* border-left:1px dotted black; */
+     margin-left: 7px;
+    padding: 5px;
+ 
+  }
+  
+  .active {
+    display: block;
+  }
+  li{
+      padding: 5px;
+  }
+ 
+  .sub:hover
+  {
+      color: blue;
+      font-size: 16px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      display: inline-block;
+      position: absolute;
+  }
+  .footer {
+    padding: 30px; text-align: center; color: #D7DBDD; font-weight: bold;
+  }
+  abbr {
+    position: relative;
+    border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+  }
+
+   abbr:hover{
+    color: darkslateblue;
+    /* font-size: 17px; */
+    transition: 0.5s;
+    content: attr(Category);
+    
+  } 
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 70%;
+    background: #f1f1f1;
+    
+  }
+
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+   
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .search-input{
+    background-color: #F4F6F7;
+      }
+  .search-input:focus{
+background-color: white;
+border:2px solid #0b7dda;
+
+  }
+  
